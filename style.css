@@ -1,0 +1,47 @@
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+.slider-image {
+  width: 100%;
+  display: none;
+  height: 550px;
+  border-radius: 25px;
+}
+.slider-image.active {
+  display: block;
+}
+.navigation {
+  text-align: center;
+  margin-top: 15px;
+}
+.slider {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #3f51b578;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.slider.active {
+  background-color: #292541;
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(96 125 139 / 81%);
+  color: #292541;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+}
+.prev-button {
+  left: 0;
+}
+.next-button {
+  right: 0;
+}
